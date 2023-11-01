@@ -25,7 +25,7 @@ import { CarrosComponent } from './components/agendas/agendas.component'
     HttpClientModule,
     ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [HttpClientModule, AgendasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
