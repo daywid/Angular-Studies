@@ -26,7 +26,7 @@ buscar(id: number): Observable<Agenda> {
 
 cadastrar(agenda: Agenda): Observable<any> {
   const url = `${this.apiUrl}/cadastrar`;
-  return this.http.post<Carro>(url, agenda, httpOptions);
+  return this.http.post<Agenda>(url, agenda, httpOptions);
 }
 
 atualizar(agenda: Agenda): Observable<any> {
