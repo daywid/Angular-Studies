@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daywid\\Documents\\GitHub\\Angular-Studies\\MarcenariaApi\\MarcenariaApi.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\test drive angukar\\MarcenariaApi\\MarcenariaApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daywid\\Documents\\GitHub\\Angular-Studies\\MarcenariaApi\\MarcenariaApi.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\test drive angukar\\MarcenariaApi\\MarcenariaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daywid\\Documents\\GitHub\\Angular-Studies\\MarcenariaApi\\MarcenariaApi.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\test drive angukar\\MarcenariaApi\\MarcenariaApi.csproj",
         "projectName": "MarcenariaApi",
-        "projectPath": "C:\\Users\\Daywid\\Documents\\GitHub\\Angular-Studies\\MarcenariaApi\\MarcenariaApi.csproj",
-        "packagesPath": "C:\\Users\\Daywid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daywid\\Documents\\GitHub\\Angular-Studies\\MarcenariaApi\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\test drive angukar\\MarcenariaApi\\MarcenariaApi.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\test drive angukar\\MarcenariaApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Daywid\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
