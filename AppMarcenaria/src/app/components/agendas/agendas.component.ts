@@ -1,42 +1,36 @@
+// agendas.component.ts
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { Observer } from 'rxjs';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { AgendasService } from 'src/app/agendas.service';
 import { Agenda } from 'src/app/Agenda';
-// import { ModelosService } from 'src/app/modelos.service';
-// import { Modelo } from 'src/app/Modelo';
 
 @Component({
   selector: 'app-agendas',
   templateUrl: './agendas.component.html',
   styleUrls: ['./agendas.component.css']
 })
-export class AgendasComponent implements OnInit{
-
-  formulario: any;
+export class AgendasComponent implements OnInit {
+  formulario!: FormGroup;  // Alteração aqui
   tituloFormulario: string = '';
+minhaAgenda: any;
+agenda: any;
 
-  constructor(private agendasService : AgendasService) { }
+  constructor(private formBuilder: FormBuilder, private agendasService: AgendasService) { }
 
   ngOnInit(): void {
     this.tituloFormulario = 'Nova Agenda';
-    this.formulario = new FormGroup({
-      // placa: new FormControl(null),
-      // descricao: new FormControl(null)
-
-      descricao: new FormControl(null),
-      data: new FormControl(null),
-      tipo: new FormControl(null),
-      funcionarioId: new FormControl(null)
-
-
-    })
+    this.formulario = this.formBuilder.group({
+      descricao: [null],
+      data: [null],
+      tipo: [null],
+      funcionarioId: [null],
+    });
   }
 
   enviarFormulario(): void {
-    const agenda : Agenda = this.formulario.value;
+    const agenda: Agenda = this.formulario.value as Agenda;
     this.agendasService.cadastrar(agenda).subscribe(result => {
       alert('Agenda inserida com sucesso.');
-    })
-}
+    });
+  }
 }

@@ -1,15 +1,30 @@
 export class Agenda {
-  id: number;
+  id: number = 0;
   descricao?: string;
-  data: Date;
+  dataString: string = '';
   tipo?: string;
-  funcionarioId: number;
+  funcionarioId: number = 0;
 
-  constructor(id: number, data: Date, funcionarioId: number, descricao?: string, tipo?: string) {
-    this.id = id;
-    this.descricao = descricao;
-    this.data = data;
-    this.tipo = tipo;
-    this.funcionarioId = funcionarioId;
-  }
+
+
+  // setDataFromString(dataString: string): void {
+  //   const dateArray = dataString.split('-').map(Number);
+  //   this.data = new Date(dateArray[0], dateArray[1] - 1, dateArray[2]);
+  // }
+
+  // toJSON(): any {
+  //   // Converte a data para o formato desejado.
+  //   const formattedDate = this.data.toISOString().split('T')[0];
+
+  //   return {
+  //     id: this.id,
+  //     descricao: this.descricao,
+  //     data: formattedDate,
+  //     tipo: this.tipo,
+  //     funcionarioId: this.funcionarioId,
+  //   };
+  // }
+
+
+
 }

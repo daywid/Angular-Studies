@@ -11,6 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgendasService } from './agendas.service';
 import { AgendasComponent } from './components/agendas/agendas.component';
 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+
+
+
 // import { MarcasService } from './marcas.service';
 // import { MarcasComponent } from './components/marcas/marcas.component';
 // import { ModelosService } from './modelos.service';
@@ -36,7 +42,14 @@ import { AgendasComponent } from './components/agendas/agendas.component';
     HttpClientModule,
     ReactiveFormsModule,
     ModalModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+
+    //angular material imports
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
+
   ],
   providers: [
     HttpClientModule,
