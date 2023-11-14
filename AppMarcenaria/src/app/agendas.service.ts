@@ -11,7 +11,7 @@ headers: new HttpHeaders({
 providedIn: 'root'
 })
 export class AgendasService {
-apiUrl = 'http://localhost:5000/Agenda';
+apiUrl = 'http://localhost:5000/api/Agenda';
 constructor(private http: HttpClient) { }
 
 listar(): Observable<Agenda[]> {
