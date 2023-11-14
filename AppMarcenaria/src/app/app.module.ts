@@ -10,6 +10,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AgendasService } from './agendas.service';
 import { AgendasComponent } from './components/agendas/agendas.component';
+import { FuncionariosService } from './funcionarios.service';
+import { FuncionariosComponent } from './components/funcionarios/funcionarios.component';
+
 
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatInputModule } from '@angular/material/input';
@@ -30,6 +33,7 @@ import { MatNativeDateModule } from '@angular/material/core';
   declarations: [
     AppComponent,
     AgendasComponent,
+    FuncionariosComponent,
     // MarcasComponent,
     // ModelosComponent,
     // ClientesComponent,
@@ -53,7 +57,8 @@ import { MatNativeDateModule } from '@angular/material/core';
   ],
   providers: [
     HttpClientModule,
-    AgendasService
+    AgendasService,
+    FuncionariosService
   //   MarcasService,
   //   ModelosService,
   //   ClientesService,
