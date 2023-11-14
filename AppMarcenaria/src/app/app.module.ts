@@ -5,18 +5,45 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ModalModule } from 'ngx-bootstrap/modal';
+import { ModalModule} from 'ngx-bootstrap/modal';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AgendasService } from './agendas.service';
+
+// import { MarcasService } from './marcas.service';
+// import { MarcasComponent } from './components/marcas/marcas.component';
+// import { ModelosService } from './modelos.service';
+// import { ModelosComponent } from './components/modelos/modelos.component';
+// import { ClientesService } from './clientes.service';
+// import { ClientesComponent } from './components/clientes/clientes.component';
+// import { CarrosService } from './carros.service';
+// import { CarrosComponent } from './components/carros/carros.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // MarcasComponent,
+    // ModelosComponent,
+    // ClientesComponent,
+    // CarrosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    ModalModule.forRoot(),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    HttpClientModule,
+    AgendasService
+  //   MarcasService,
+  //   ModelosService,
+  //   ClientesService,
+  //   CarrosService
+   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
