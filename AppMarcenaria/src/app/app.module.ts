@@ -9,6 +9,7 @@ import { ModalModule} from 'ngx-bootstrap/modal';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AgendasService } from './agendas.service';
+import { AgendasComponent } from './components/agendas/agendas.component';
 
 // import { MarcasService } from './marcas.service';
 // import { MarcasComponent } from './components/marcas/marcas.component';
@@ -22,6 +23,7 @@ import { AgendasService } from './agendas.service';
 @NgModule({
   declarations: [
     AppComponent,
+    AgendasComponent,
     // MarcasComponent,
     // ModelosComponent,
     // ClientesComponent,
